@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.852
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoodVision", "GoodVision.csproj", "{001511CE-F22E-4FB3-80B3-CD2667DC2637}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E7212C61-F3F3-45B1-9BBE-E57FEC20754D} = {E7212C61-F3F3-45B1-9BBE-E57FEC20754D}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rbutton", "rbutton\rbutton.csproj", "{38A0CE2A-335B-4A34-8B34-603CD42F4A36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TetraCustomButton", "TetraCustomButton\TetraCustomButton.csproj", "{E7212C61-F3F3-45B1-9BBE-E57FEC20754D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ButtonRoundedCorners", "ButtonRoundedCorners\ButtonRoundedCorners.csproj", "{716C50CF-AD8C-402A-A6FA-A76D27A60068}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{001511CE-F22E-4FB3-80B3-CD2667DC2637}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{001511CE-F22E-4FB3-80B3-CD2667DC2637}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{001511CE-F22E-4FB3-80B3-CD2667DC2637}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{001511CE-F22E-4FB3-80B3-CD2667DC2637}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38A0CE2A-335B-4A34-8B34-603CD42F4A36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38A0CE2A-335B-4A34-8B34-603CD42F4A36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38A0CE2A-335B-4A34-8B34-603CD42F4A36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38A0CE2A-335B-4A34-8B34-603CD42F4A36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7212C61-F3F3-45B1-9BBE-E57FEC20754D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7212C61-F3F3-45B1-9BBE-E57FEC20754D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7212C61-F3F3-45B1-9BBE-E57FEC20754D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7212C61-F3F3-45B1-9BBE-E57FEC20754D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{716C50CF-AD8C-402A-A6FA-A76D27A60068}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{716C50CF-AD8C-402A-A6FA-A76D27A60068}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{716C50CF-AD8C-402A-A6FA-A76D27A60068}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{716C50CF-AD8C-402A-A6FA-A76D27A60068}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1F3AC760-B874-45D7-B253-1891769ED91A}
+	EndGlobalSection
+EndGlobal

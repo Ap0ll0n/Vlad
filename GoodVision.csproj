@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Xamarin.Forms.2.4.0.280\build\netstandard1.0\Xamarin.Forms.props" Condition="Exists('packages\Xamarin.Forms.2.4.0.280\build\netstandard1.0\Xamarin.Forms.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{001511CE-F22E-4FB3-80B3-CD2667DC2637}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GoodVision</RootNamespace>
+    <AssemblyName>GoodVision</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ButtonRoundedCorners, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ButtonRoundedCorners.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="rbutton, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\rbutton.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TetraCustomButton">
+      <HintPath>TetraCustomButton\bin\Debug\TetraCustomButton.dll</HintPath>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="WinFormAnimation, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\WinFormAnimation.1.3.0.0\lib\net35-Client\WinFormAnimation.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Xamarin.Forms.2.4.0.280\lib\netstandard1.0\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Xamarin.Forms.2.4.0.280\lib\netstandard1.0\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Xamarin.Forms.2.4.0.280\lib\netstandard1.0\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AfterTestingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AfterTestingForm.Designer.cs">
+      <DependentUpon>AfterTestingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoodVisionClass.cs" />
+    <Compile Include="GoodVisionInterface.cs" />
+    <Compile Include="LandotCheckPro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LandotCheckPro.Designer.cs">
+      <DependentUpon>LandotCheckPro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RegMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegMessage.Designer.cs">
+      <DependentUpon>RegMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SivtsevCheckingPro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SivtsevCheckingPro.Designer.cs">
+      <DependentUpon>SivtsevCheckingPro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HellpMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HellpMessage.Designer.cs">
+      <DependentUpon>HellpMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Landolt_Circle.cs" />
+    <Compile Include="Letter.cs" />
+    <Compile Include="RegForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegForm.Designer.cs">
+      <DependentUpon>RegForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Object.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StatisticForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticForm.Designer.cs">
+      <DependentUpon>StatisticForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserClass.cs" />
+    <Compile Include="VisionCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VisionCheck.Designer.cs">
+      <DependentUpon>VisionCheck.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AfterTestingForm.resx">
+      <DependentUpon>AfterTestingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LandotCheckPro.resx">
+      <DependentUpon>LandotCheckPro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegMessage.resx">
+      <DependentUpon>RegMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SivtsevCheckingPro.resx">
+      <DependentUpon>SivtsevCheckingPro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HellpMessage.resx">
+      <DependentUpon>HellpMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegForm.resx">
+      <DependentUpon>RegForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticForm.resx">
+      <DependentUpon>StatisticForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisionCheck.resx">
+      <DependentUpon>VisionCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\desktop-3246124__340.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\66936.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_186382688-stock-illustration-eye-test-chart-vector-rings.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hgEtDJcH_400x400.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hrest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fontb-g.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\civtsev.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SivtsevHover1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\landolt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LandoltHover.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SivtsevHover.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\фон2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\подложка.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\questionHover2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\вопросе.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\подложка2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Регистр2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gjlkj%3brf2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14Hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13Hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\helpBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlueBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\downHower.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LeftHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RightHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\старт11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\стат.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\статHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\статист.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\початиТест.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\почТестHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\statistic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HelpStat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HelpTest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LightBlueBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\війти.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\війтиHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconSmall1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\И.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\К.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\М.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Н.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ш.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ы.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Б.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enterMessage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\No.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\No1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NoHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YesHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\статHover1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\статист1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Circle.png.bmp" />
+    <None Include="Resources\ИнвСтарт.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\кольцо.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backArrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enterMessageLand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\вопросе1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewHelp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewHelpHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewHelp1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChangeUser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChangeUserHover.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Xamarin.Forms.2.4.0.280\build\netstandard1.0\Xamarin.Forms.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Xamarin.Forms.2.4.0.280\build\netstandard1.0\Xamarin.Forms.props'))" />
+    <Error Condition="!Exists('packages\Xamarin.Forms.2.4.0.280\build\netstandard1.0\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Xamarin.Forms.2.4.0.280\build\netstandard1.0\Xamarin.Forms.targets'))" />
+  </Target>
+  <Import Project="packages\Xamarin.Forms.2.4.0.280\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('packages\Xamarin.Forms.2.4.0.280\build\netstandard1.0\Xamarin.Forms.targets')" />
+</Project>
